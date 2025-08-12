@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* List styling */
+        .projects-list ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .projects-list li {
+            margin: 20px 0;
+        }
+
+        .projects-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 15px 40px;
+            border: 2px solid white;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+
+        .projects-list a:hover {
+            background-color: white;
+            color: black;
+            transform: translateY(-2px);
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Projects</h1>
-    <ul>
-        <li><a href="ex-1/index.html">Project 1</a></li>
-        <li><a href="ex-2/index.html">Project 2</a></li>
-    </ul>
+    <div class="container">
+        <h1>Web Technologies</h1>
+        
+        <div class="projects-list">
+            <ul>
+                <li><a href="ex-1/index.html">Exercise 1</a></li>
+                <li><a href="ex-2/index.html">Exercise 2</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
