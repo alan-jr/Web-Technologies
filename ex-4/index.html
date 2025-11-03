@@ -771,7 +771,7 @@
             userAnswers = {};
             
             // Select 5 random questions
-            const shuffled = footballQuestions.sort(() => 0.8 - Math.random());
+            const shuffled = footballQuestions.sort(() => 0.5 - Math.random());
             currentQuiz = shuffled.slice(0, 8);
             
             const container = document.getElementById('quizContainer');
@@ -847,7 +847,7 @@
             
             resultsDiv.innerHTML = `
                 <div class="score ${scoreClass}">
-                    Your Score: ${correctAnswers}/5 (${percentage}%)<br>
+                    Your Score: ${correctAnswers}/8 (${percentage}%)<br>
                     ${scoreMessage}
                 </div>
                 ${resultsHTML}
@@ -872,3 +872,4 @@
 </body>
 
 </html>
+
